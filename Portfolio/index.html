@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulrahmon Babatunde</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            
+
+            <ul class="nav-items">
+                <li><a href="index.html" class="nav-items_active" target="_blank">Home</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="projects.html" target="_blank">Projects</a></li>
+            </ul>
+
+            <div class="links">
+                <a href="https://www.linkedin.com/in/abdulrahmon-babatunde-423233273/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/abdulrahmonbb" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/rahmoncodes" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </nav>
+
+        <div class="wrapper">
+            <div class="cols">
+                <span class="topline">Hello</span>
+                <h1>I'm <span class="multi-text"></span></h1>
+                <p>Your next software engineer.</p>
+                <div class="btns">
+                    <button class="download-btn"> <a href="assets/resume.pdf" download="Abdulrahmon-resume"><i class="fa fa-download"></i>Download CV </a></button>
+                    <button> <a href="projects.html" target="_blank"> Projects</a></button>
+                </div>
+            </div>
+    
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+
+    const typed = new Typed(".multi-text", {
+    strings: [" Abdulrahmon", " Babatunde"], 
+    loop: true,
+    typeSpeed : 100,
+    backSpeed : 80,
+    backDelay : 1500
+})
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | AB</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            
+
+            <ul class="nav-items">
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="projects.html" class="nav-items_active" target="_blank">Projects</a></li>
+            </ul>
+        </nav>
+    
+        <h1>My <span class="headline"></span></h1>
+
+        <div class="decor-b">< /></div>
+        <div class="decor-dev">{.dev}</div>
+
+        <div class="project-container">
+            <div class="project-row">
+                <div class="project-content">
+                    <h2>Collab.</h2>
+                    <p>A responsive landing page for an inclusive tech platform which serves as a hub for open-source and collaborative projects.</p>
+                    <div>
+                        <button class="btns">
+                            <a href="https://co1lab.netlify.app" target="_blank">Live Preview</a>
+                        </button>
+                        <hr class="decor-line ">
+                        <button class="btns">
+                            <a href="https://github.com/abdulrahmonbb/Collab" target="_blank">Source Code</a>
+                        </button>
+                    </div>
+                    
+                </div>
+    
+                <div class="project-image">
+                    <img src="assets/collab-starter.png" alt="">
+                </div>
+            </div>
+    
+                <hr class="project-divide">
+    
+            <div class="project-row">
+                <div class="project-content">
+                    <h2>SocialBook</h2>
+                    <p>A Facebook clone 100% user interface built using vanilla Javascript, CSS and HTML. With in-built display features like dark/light mode.</p>
+                    <div>
+                        <div class="decor-icon"><i class="fa fa-code-compare"></i></div>
+                        <button class="btns">
+                            <a href="https://socialbookcl.netlify.app/" target="_blank">Live Preview</a>
+                        </button>
+                        <button class="btns">
+                            <a href="https://github.com/abdulrahmonbb/SocialBook" target="_blank">Source Code</a>
+                        </button>
+                    </div>
+                    
+                </div>
+    
+                <div class="project-image">
+                    <img src="assets/socialbook.png" alt="">
+                </div>
+            </div>
+    
+            <hr class="project-divide">
+    
+                
+            <div class="project-row">
+                <div class="project-content">
+                    <h2>Illustro</h2>
+                    <p>A platform for web designers and developers to access illustrations and illustration related resources, aimed at improving work flow and the development process while also serving value-driven components.</p>
+                    <div>
+                        <hr class="decor-line two">
+                        <button class="btns">
+                            <a href="">Live Preview</a>
+                        </button>
+                        <button class="btns">
+                            <a href="">Source Code</a>
+                        </button>
+                    </div>
+                    
+                </div>
+    
+                <div class="project-image">
+                    <img src="assets/illustro1.png" alt="">
+                </div>
+            </div>
+
+            <hr class="project-divide">
+
+        </div>
+
+    </div>
+
+    <div class="panel-container">
+        <div class="panel-decor-code">&lt;code&gt;</div>
+        <div class="panel-decor-collab">collaborate</div>
+        <div class="panel-decor-connect">connect</div>
+        <div class="panel">
+            <h1 class="panel-headline">Let's Connect.</h1>
+            <form action="">
+                <div class="input">
+                    <label for="name">Name</label>
+                    <input type="text" required id="name">
+                </div>
+
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" required id="email">
+                </div>
+
+                <div class="input">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message-content" cols="40" rows="10" required></textarea>
+                </div>
+
+                <div class="btn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+   <div class="footer">
+        <small>Abdulrahmon Babatunde, &copy;2023.</small>
+   </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+
+    const typed = new Typed(".headline", {
+    strings: [" Projects", " Works"], 
+    loop: true,
+    typeSpeed : 120,
+    backSpeed : 80,
+    backDelay : 1500
+})
+    </script>
+</body>

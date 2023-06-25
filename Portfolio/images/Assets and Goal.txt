@@ -1,0 +1,14 @@
+FONTS
+Poppins
+
+COLORS
+Primary:
+Secondary:
+Complimentary:
+
+ABOUT ME:
+
+
+PROJECTS
+1. Socialbook (A Facebook Clone)
+2. 
