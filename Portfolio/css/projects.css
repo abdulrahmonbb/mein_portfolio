@@ -72,6 +72,33 @@ nav {
     font-weight: bold;
 }
 
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1000;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
 
 .container {
     margin: 0 auto;
@@ -335,4 +362,252 @@ hr.decor-line.two {
     margin: 0 auto;
     margin-top: 15vh;
     opacity: 0.5;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .container h1 {
+        font-size: 60px;
+    }
+
+    .container .headline {
+        font-size: 70px;
+    }
+
+    .project-row {
+        padding: 15px;
+    }
+
+    .project-content {
+        width: 50%;
+        margin-right: 2%;
+    }
+
+    .project-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .project-content p {
+        font-size: 1rem;
+    }
+
+    .panel {
+        width: 60%;
+        left: 20%;
+    }
+
+    .decor-b,
+    .decor-dev {
+        font-size: 7rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 20px;
+        margin-bottom: 5vh;
+    }
+
+    .hamburger {
+        display: flex;
+        order: 2;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        order: 3;
+        background: #fff;
+        gap: 0;
+    }
+
+    .nav-items.active {
+        display: flex;
+    }
+
+    .nav-items li {
+        margin: 10px 0;
+    }
+
+    .nav-items li a {
+        font-size: 18px;
+        margin-right: 0;
+    }
+
+    .container h1 {
+        font-size: 36px;
+    }
+
+    .container .headline {
+        font-size: 42px;
+    }
+
+    .decor-b,
+    .decor-dev,
+    .decor-icon {
+        display: none;
+    }
+
+    hr.decor-line,
+    hr.decor-line.two {
+        display: none;
+    }
+
+    .project-container {
+        margin-top: 10vh;
+        padding: 0;
+    }
+
+    .project-row {
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .project-content {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .project-content h2 {
+        font-size: 2rem;
+    }
+
+    .project-content p {
+        font-size: 0.95rem;
+    }
+
+    .project-content .btns {
+        padding: 8px 16px;
+        margin-right: 8px;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+
+    .btns a {
+        font-size: 1rem;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+    .panel-container {
+        width: 95%;
+        height: auto;
+        min-height: 70vh;
+        margin: 5vh auto 0;
+    }
+
+    .panel {
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 0;
+        padding: 15px;
+    }
+
+    .panel-headline {
+        font-size: 1.5rem;
+    }
+
+    .input input, textarea {
+        width: 100%;
+    }
+
+    .input label {
+        font-size: 1rem;
+    }
+
+    .panel .btn button {
+        padding: 6px 16px;
+        font-size: 1rem;
+    }
+
+    .panel-decor-code,
+    .panel-decor-collab,
+    .panel-decor-connect {
+        display: none;
+    }
+
+    .footer {
+        width: 80%;
+        font-size: 1rem;
+        margin-top: 8vh;
+        text-align: center;
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+    .logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .nav-items li a {
+        font-size: 14px;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .container .headline {
+        font-size: 32px;
+    }
+
+    .project-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .project-content p {
+        font-size: 0.85rem;
+    }
+
+    .project-content .btns {
+        padding: 6px 12px;
+        margin-right: 5px;
+    }
+
+    .btns a {
+        font-size: 0.85rem;
+    }
+
+    .panel-headline {
+        font-size: 1.3rem;
+    }
+
+    .input label {
+        font-size: 0.9rem;
+    }
+
+    .panel .btn button {
+        padding: 5px 12px;
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        width: 90%;
+        font-size: 0.85rem;
+    }
 }
