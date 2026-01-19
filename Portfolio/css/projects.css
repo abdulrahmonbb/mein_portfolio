@@ -263,98 +263,6 @@ hr.decor-line.two {
     opacity: 0.08;
 }
 
-.panel-container {
-    background: #fff;
-    width: 80%;
-    height: 80vh;
-    margin: 10vh auto 0;
-    /* padding: 0 2rem; */
-    position: relative;
-}
-
-.panel {
-    position: absolute;
-    width: 50%;
-    background: #e5e5e5;
-    top: 1.9%;
-    left: 25%;
-    padding: 20px;
-}
-
-.panel-headline {
-    text-align: center;
-    font-size: 2rem;
-    color: #333;
-}
-
-
-.input {
-    margin-bottom: 15px;
-}
-
-.input input, textarea {
-    display: block;
-    width: 80%;
-    margin: 0 auto;
-    padding: 5px;
-    resize: none;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #333;
-    outline: none;
-    transition: all 0.5s ease;
-}
-
-.input input:focus, textarea:focus {
-    border-bottom: 1px solid #fff;
-    color: #333;
-}
-
-.input label {
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-.panel .btn button{
-    padding: 8px 20px;
-    font-size: 1.3rem;
-    background-color: #fff;
-    border: 2px solid black;
-}
-
-.panel .btn button:hover{
-    background-color: black;
-    color: white;
-}
-
-.panel-decor-code {
-    position: absolute;
-    top: 20%;
-    right: 9%;
-    opacity: 0.085;
-    transform: rotateZ(72deg);
-    font-size: 3rem;
-    font-weight: bold;
-}
-.panel-decor-collab {
-    position: absolute;
-    top: 45%;
-    left: 9%;
-    opacity: 0.04;
-    transform: rotateZ(30deg);
-    font-size: 3rem;
-    font-weight: bold;
-}
-.panel-decor-connect {
-    position: absolute;
-    bottom: 10%;
-    right: 0%;
-    opacity: 0.03;
-    transform: rotateZ(295deg);
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
 .footer {
     font-size: 1.5rem;
     font-weight: 200;
@@ -391,11 +299,6 @@ hr.decor-line.two {
 
     .project-content p {
         font-size: 1rem;
-    }
-
-    .panel {
-        width: 60%;
-        left: 20%;
     }
 
     .decor-b,
@@ -511,44 +414,6 @@ hr.decor-line.two {
         width: 100%;
     }
 
-    .panel-container {
-        width: 95%;
-        height: auto;
-        min-height: 70vh;
-        margin: 5vh auto 0;
-    }
-
-    .panel {
-        position: relative;
-        width: 100%;
-        left: 0;
-        top: 0;
-        padding: 15px;
-    }
-
-    .panel-headline {
-        font-size: 1.5rem;
-    }
-
-    .input input, textarea {
-        width: 100%;
-    }
-
-    .input label {
-        font-size: 1rem;
-    }
-
-    .panel .btn button {
-        padding: 6px 16px;
-        font-size: 1rem;
-    }
-
-    .panel-decor-code,
-    .panel-decor-collab,
-    .panel-decor-connect {
-        display: none;
-    }
-
     .footer {
         width: 80%;
         font-size: 1rem;
@@ -591,19 +456,6 @@ hr.decor-line.two {
 
     .btns a {
         font-size: 0.85rem;
-    }
-
-    .panel-headline {
-        font-size: 1.3rem;
-    }
-
-    .input label {
-        font-size: 0.9rem;
-    }
-
-    .panel .btn button {
-        padding: 5px 12px;
-        font-size: 0.9rem;
     }
 
     .footer {
